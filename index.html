@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Temps sur course</title>
+</head>
+<body>
+    <section id="container">
+        <h1>Temps sur course</h1>
+        <form id="speedForm">
+            <label for="speed">Votre vitesse...</label>
+            <input type="text" id="speed" name="speed"
+            inputmode="numeric" pattern="\d*">
+            <input id="button" type="button" value="Valider">
+            <span id="error">Entrez des chiffres !!!</span>
+        </form>
+        <table id="speedTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Temps</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="distance">400m</td>
+                    <td id="resultFourHundredMeters" class="timeDistance" ></td>
+                </tr>
+                <tr>
+                    <td class="distance">1km</td>
+                    <td id="resultOneKilolemeter" class="timeDistance" ></td>
+                </tr>
+                <tr>
+                    <td class="distance">3km</td>
+                    <td id="resultThreeKilolemeters" class="timeDistance"></td>
+                </tr>
+                <tr>
+                    <td class="distance">5km</td>
+                    <td id="resultFiveKilolemeters" class="timeDistance"></td>
+                </tr>
+                <tr>
+                    <td class="distance">10km</td>
+                    <td id="resultTenKilolemeters" class="timeDistance"></td>
+                </tr>
+                <tr>
+                    <td class="distance">15km</td>
+                    <td id="resultFifteenKilolemeters" class="timeDistance"></td>
+                </tr>
+                <tr>
+                    <td class="distance">20km</td>
+                    <td id="resultTwentyKilolemeters" class="timeDistance"></td>
+                </tr>
+                <tr>
+                    <td class="distance">Semi-marathon</td>
+                    <td id="resultHalfMarathon" class="timeDistance"></td>
+                </tr>
+                <tr>
+                    <td class="distance">Marathon</td>
+                    <td id="resultMarathon" class="timeDistance"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="src.js" ></script> 
+</body>
+</html>
